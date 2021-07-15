@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,500&display=swap');
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Whole Doc */
+body{
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Slider */
+.slider > div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+}
+
+.slider > div::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background: #f4a460;
+    opacity: 0.3;
+}
+
+.slider img{
+    width: 120%;
+    height: 120%;
+    animation: zoom-o 5s linear infinite;
+}
+
+.text{
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translate(0%, -50%);
+    color: #fff;
+    opacity: 0.6;
+    animation: text-left 5s linear infinite;
+}
+
+.text h1{
+    position: relative;
+    font-size: 4rem;
+    text-transform: capitalize;
+}
+
+.text span{
+    position: absolute;
+    background: #c0392b;
+    width: 60%;
+    height: 5px;
+}
+
+.text p{
+    font-size: 0.9rem;
+    font-weight: 300;
+    background: rgb(45, 52, 54, 0.9);
+    padding: 20px;
+    text-align: justify;   
+    line-height: 1.4rem;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Main Animations and Keyframes */
+.slider-1{
+    animation: slide1 25s linear infinite;
+    background-position: center;
+    height: 400px;
+    margin-bottom: 30px;
+
+}
+
+.slider-2{
+    animation: slide2 25s linear infinite;
+}
+
+.slider-3{
+    animation: slide3 25s linear infinite;
+}
+
+.slider-4{
+    animation: slide4 25s linear infinite;
+}
+
+.slider-5{
+    animation: slide5 25s linear infinite;
+}
+
+/* For Slides */
+@keyframes slide1{
+    0%{
+        visibility: visible;
+    }
+    20%{
+        visibility: hidden;
+    }
+    40%{
+        visibility: hidden;
+    }
+    60%{
+        visibility: hidden;
+    }
+    80%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+
+@keyframes slide2{
+    0%{
+        visibility: hidden;
+    }
+    20%{
+        visibility: hidden;
+    }
+    40%{
+        visibility: visible;
+    }
+    60%{
+        visibility: hidden;
+    }
+    80%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+
+@keyframes slide3{
+    0%{
+        visibility: hidden;
+    }
+    20%{
+        visibility: hidden;
+    }
+    40%{
+        visibility: hidden;
+    }
+    60%{
+        visibility: visible;
+    }
+    80%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+
+@keyframes slide4{
+    0%{
+        visibility: hidden;
+    }
+    20%{
+        visibility: hidden;
+    }
+    40%{
+        visibility: hidden;
+    }
+    60%{
+        visibility: hidden;
+    }
+    80%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+
+@keyframes slide5{
+    0%{
+        visibility: hidden;
+    }
+    20%{
+        visibility: hidden;
+    }
+    40%{
+        visibility: hidden;
+    }
+    60%{
+        visibility: hidden;
+    }
+    80%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+
+/* For Image */
+@keyframes zoom-o{
+    100%{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* For Text */
+@keyframes text-left{
+    100%{
+        left: 10%;
+        opacity: 1;
+    }
+}
+
+/* Responsive */
+@media(max-width: 1400px){
+    .slider > div{
+        height: 85%;
+    }
+
+    .text p{
+        font-size: 0.8rem;
+    }
+
+    .text h1{
+        font-size: 3rem;
+    }
+}
+
+@media(max-width: 1000px){
+    .slider > div{
+        height: 75%;
+    }
+
+    .text p{
+        font-size: 0.7rem;
+        line-height: 1.2rem;
+    }
+
+    .text h1{
+        font-size: 2.2rem;
+    }
+}
+
+@media(max-width: 800px){
+    .slider > div{
+        height: 65%;
+    }
+
+    .text p{
+        font-size: 0.6rem;
+        line-height: 1rem;
+    }
+
+    .text h1{
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 800px){
+    .slider > div{
+        height: 50%;
+    }
+
+    .text h1{
+        font-size: 1.8rem;
+    }
+}

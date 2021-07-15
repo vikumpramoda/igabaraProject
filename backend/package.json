@@ -1,0 +1,45 @@
+{
+  "name": "mern-auth",
+  "version": "1.0.0",
+  "description": "Mern Auth Example",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@varedis/express-session": "^1.17.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "cloudinary": "^1.21.0",
+    "concurrently": "^4.1.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.6.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "fileupload": "^1.0.0",
+    "helmet": "^4.6.0",
+    "is-empty": "^1.2.0",
+    "jsonwebtoken": "^8.5.0",
+    "moment": "^2.29.1",
+    "mongoose": "^5.12.11",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.3.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "path": "^0.12.7",
+    "uuid": "^8.3.2",
+    "validator": "^10.11.0",
+    "web-vitals": "^1.1.2"
+  },
+  "devDependencies": {
+    "node-dev": "^3.0.0",
+    "nodemon": "^1.18.10"
+  }
+}
