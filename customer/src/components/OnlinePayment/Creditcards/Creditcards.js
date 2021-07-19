@@ -84,7 +84,7 @@ const Creditcards = () => {
         <div>
             <Paper elevation={10} style={paperStyle}>
             <Scrollbars style={{ width: 985, height: '110vh' }}>
-                <div><h1>Total Bill</h1></div>
+                <div><h1>Checkout Payment</h1></div>
                 <TableContainer>
                 <Table stickyHeader aria-label="sticky table">
                     <TableRow>
