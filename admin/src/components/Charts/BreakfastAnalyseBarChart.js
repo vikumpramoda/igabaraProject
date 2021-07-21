@@ -10,7 +10,7 @@ function foodBreakfast() {
   const [posts, setPosts] = useState([]);
   const [total, setTotal] = useState(0);
   let bfood = [];
-  let brate = [];
+  let brate = [0];
  
   
   useEffect(() => {
@@ -42,6 +42,7 @@ function foodBreakfast() {
      
 
       setData({
+        
         Data: {
           labels: bfood,
           datasets: [
@@ -61,8 +62,9 @@ function foodBreakfast() {
                 "Red"
               ]
             }
+           
           ]
-        }
+        },
       });
     });
   },[]);
