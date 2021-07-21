@@ -4,13 +4,13 @@ import axios from "axios";
 import { Paper } from '@material-ui/core';
 import ChartsNavbBar from './chartNavBar';
 
-function foodBreakfast() {
+function fooddinner() {
 
   const [data, setData] = useState([]);
   const [posts, setPosts] = useState([]);
   const [total, setTotal] = useState(0);
-  let bfood = [];
-  let brate = [];
+  let dfood = [];
+  let drate = [];
  
   
   useEffect(() => {
@@ -21,10 +21,10 @@ function foodBreakfast() {
       setPosts(feedback);
       //console.log(feedback);
       feedback.forEach(record  => {
-        bfood.push(record .bfood);
-       console.log(bfood);
-        brate.push(record .brate);
-        console.log(brate);
+        dfood.push(record .dfood);
+       console.log(dfood);
+        drate.push(record .drate);
+        console.log(drate);
 
   setTotal(total+parseFloat(record.brate))  ; 
 
@@ -43,11 +43,11 @@ function foodBreakfast() {
 
       setData({
         Data: {
-          labels: ["Hoppers","StringHoppers","Noodles"],
+          labels: dfood,
           datasets: [
             {
-              label: "food rate",
-              data: brate,
+              label: "Dinner Food Item Rate Analysis ",
+              data: drate,
               backgroundColor: [
                 "#3cb371",
                 "#0000FF",
@@ -77,4 +77,4 @@ function foodBreakfast() {
   );
 }
 
-export default foodBreakfast;
+export default fooddinner;
