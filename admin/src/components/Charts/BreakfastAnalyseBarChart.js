@@ -10,7 +10,7 @@ function foodBreakfast() {
   const [posts, setPosts] = useState([]);
   const [total, setTotal] = useState(0);
   let bfood = [];
-  let brate = [0];
+  let brate = [];
  
   
   useEffect(() => {
