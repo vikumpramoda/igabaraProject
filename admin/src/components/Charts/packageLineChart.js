@@ -4,7 +4,7 @@ import axios from "axios";
 import { Paper } from '@material-ui/core';
 import ChartsNavbBar from './chartNavBar';
 
-function PackageBar() {
+function PackageLine() {
 
   const [data, setData] = useState([]);
  // const [total, setTotal] = useState(0);
@@ -62,10 +62,10 @@ function PackageBar() {
     <div>
       <Paper elevation={10} style={paperStyle}>
       <div><ChartsNavbBar/></div>
-      <Bar data={data.Data}  ></Bar>
+      <Line data={data.Data}  ></Line>
       </Paper>
     </div>
   );
 }
 
-export default PackageBar;
+export default PackageLine;

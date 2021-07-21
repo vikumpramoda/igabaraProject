@@ -46,7 +46,7 @@ function foodBreakfast() {
           labels: ["Hoppers","StringHoppers","Noodles"],
           datasets: [
             {
-              label: "food rate",
+              label: "Breakfast Analysis Chart",
               data: brate,
               backgroundColor: [
                 "#3cb371",

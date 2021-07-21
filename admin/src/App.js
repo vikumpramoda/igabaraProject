@@ -35,13 +35,14 @@ import AddFoodNavbBar from "./components/foods/addFoodNavBar";
 import ViewFoodNavbBar from "./components/foods/viewFoods/viewFoodNavBar";
 import pie from "./components/Charts/Pie";
 import FeedbackReport from "./components/feedback/feedbackReport";
-import Pie2 from "./components/Charts/packageBarChart";
 import Gmail from "./components/email/email";
 
 import AppointmentForm from "./components/calendar/ResrvationDate/AppointmentForm";
 import foodBreakfast from "./components/Charts/BreakfastAnalyseBarChart";
 import fooddinner from "./components/Charts/DinnerAnalyseBarChart";
 import foodlunch from "./components/Charts/LunchAnalyseBarChart";
+import PackageBar from "./components/Charts/packageBarChart";
+import PackageLine from "./components/Charts/packageLineChart";
 class App extends Component {
   render() {
     return (
@@ -80,7 +81,8 @@ class App extends Component {
                 <Route exact path="/guestanddatesList" component={GuestandDatesList} />
                 <Route exact path="/foreignguestanddatesList" component={ForeignGuestandDatesList} />
                 <Route exact path="/pie" component={pie} />
-                <Route exact path="/pie2" component={Pie2} />
+                <Route exact path="/packageBar" component={PackageBar} />
+                <Route exact path="/packageLine" component={PackageLine} />
                 <Route exact path="/breakfastChart" component={foodBreakfast} />
                 <Route exact path="/dinnerChart" component={fooddinner} />
                 <Route exact path="/lunchChart" component={foodlunch} />

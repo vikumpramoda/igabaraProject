@@ -46,7 +46,7 @@ function foodlunch() {
           labels: lfood,
           datasets: [
             {
-              label: "Dinner Food Item Rate Analysis ",
+              label: "Lunch Food Item Rate Analysis ",
               data: lrate,
               backgroundColor: [
                 "#3cb371",

@@ -12,11 +12,12 @@ export default class ChartsNavbBar extends Component {
   </Dropdown.Toggle>
 
   <Dropdown.Menu>
-    <Dropdown.Item href="/pie">1</Dropdown.Item>
-    <Dropdown.Item href="/pie2">2</Dropdown.Item>
-    <Dropdown.Item href="/breakfastChart">3</Dropdown.Item>
-    <Dropdown.Item href="/lunchChart">4</Dropdown.Item>
-    <Dropdown.Item href="/dinnerChart">5</Dropdown.Item>
+    <Dropdown.Item href="/pie">1 - Analysis of demand for Hobbit Houses</Dropdown.Item>
+    <Dropdown.Item href="/packageLine">2 - Analysis of demand for Package Rate </Dropdown.Item>
+    <Dropdown.Item href="/packageBar">3 - Analysis of demand for Package Rate (Bar Chart) </Dropdown.Item>
+    <Dropdown.Item href="/breakfastChart">4 - Breakfast Analysis Chart</Dropdown.Item>
+    <Dropdown.Item href="/lunchChart">5 - Lunch Analysis Chart</Dropdown.Item>
+    <Dropdown.Item href="/dinnerChart">6 - Dinner Analysis Chart</Dropdown.Item>
   </Dropdown.Menu>
 </Dropdown>
             </div>
