@@ -43,7 +43,7 @@ function foodBreakfast() {
 
       setData({
         Data: {
-          labels: ["Hoppers","StringHoppers","Noodles"],
+          labels: bfood,
           datasets: [
             {
               label: "Breakfast Analysis Chart",

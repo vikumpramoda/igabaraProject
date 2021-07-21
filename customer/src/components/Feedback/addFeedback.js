@@ -322,6 +322,9 @@ componentDidMount(){
                     }}
                     >
                     <option aria-label="None" value="" />
+                    <option value={"BBQ"}>BBQ</option>
+                    <option value={"Chicken Rice"}>Chicken Rice</option>
+                    <option value={"Kottu"}>Kottu</option>
                     <option value={"Rice & Curry"}>Rice & Curry</option>
                     <option value={"Egg Rice"}>Egg Rice</option>
                     <option value={"Veg Noodles"}>Veg Noodles</option>
@@ -353,9 +356,12 @@ componentDidMount(){
                     }}
                     >
                     <option aria-label="None" value="" />
-                    <option value={"BBQ"}>BBQ</option>
+                    <option value={"Rice & Curry"}>Rice & Curry</option>
                     <option value={"Chicken Rice"}>Chicken Rice</option>
-                    <option value={"Kottu"}>Kottu</option>
+                    <option value={"Pasta"}>Pasta</option>
+                    <option value={"Mix Rice"}>Mix Rice</option>
+                    <option value={"Egg Rice"}>Egg Rice</option>
+                    <option value={"Veg Noodles"}>Veg Noodles</option>
                     </Select>
                     </FormControl>
 
