@@ -3,13 +3,21 @@ import {Link} from 'react-router-dom';
 import axios from 'axios';
 import { Paper } from '@material-ui/core'
 import { Scrollbars } from 'rc-scrollbars';
+import Pdf from "react-to-pdf";
+import Button from 'react-bootstrap/Button';
+const ref = React.createRef();
 const Feedback=props=>(
     <tr>
         <td>{props.feedback.guest}</td>
         <td>{props.feedback.igabara}</td>
         <td>{props.feedback.packagename}</td>
         <td>{props.feedback.packagerate}</td>
-        <td>{props.feedback.food}</td>
+        <td>{props.feedback.bfood}</td>
+        <td>{props.feedback.brate}</td>
+        <td>{props.feedback.lfood}</td>
+        <td>{props.feedback.lrate}</td>
+        <td>{props.feedback.dfood}</td>
+        <td>{props.feedback.drate}</td>
         <td>{props.feedback.message}</td>
     
     <td>
@@ -54,10 +62,10 @@ export default class FeedbackReport extends Component {
     }
 
     render() {
-        const paperStyle={padding :20,height:'72vh',width:1000, margin:"20px auto"}
+        const paperStyle={padding :20,height:'82vh',width:1000, margin:"20px auto"}
         return (
             
-            <div>
+            <div className="Post" ref={ref}>
                 <Paper elevation={10} style={paperStyle}>
                 <h3>Feedback Report</h3>
                 <Scrollbars style={{ width: 950, height: '72vh' }}>
@@ -68,7 +76,12 @@ export default class FeedbackReport extends Component {
                         <th>House Name</th>
                         <th>Package Name</th>
                         <th>package Rate</th>
-                        <th>Food</th>
+                        <th>Breakfast Food Items</th>
+                        <th>Rate</th>
+                        <th>Lunch Food Items</th>
+                        <th>Rate</th>
+                        <th>Dinner Food Items</th>
+                        <th>Rate</th>
                         <th>Message</th>
                         <th>action</th>
                         </tr>
@@ -77,6 +90,10 @@ export default class FeedbackReport extends Component {
                         {this.feedbackList()}
                     </tbody>
                 </table>
+                          
+        <Pdf targetRef={ref} filename="Guest Deatails List.pdf">
+        {({ toPdf }) => <Button variant="success" onClick={toPdf}>Download as PDF</Button>}
+      </Pdf>
                 </Scrollbars>
                 </Paper>
             </div>

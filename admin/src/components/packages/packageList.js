@@ -58,7 +58,7 @@ export default class PackageList extends Component {
             
             <div>
                 <Paper elevation={10} style={paperStyle}>
-                <h3>logged exercises</h3>
+                <h3>Package List</h3>
                 <Scrollbars style={{ width: 950, height: '60vh' }}>
                 <table className="table">
                     <thead className="thead-light">
