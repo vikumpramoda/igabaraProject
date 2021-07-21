@@ -590,7 +590,7 @@ export default class AddDinner extends Component {
 <div><label></label></div>
                                     <div className="form-group">
                                 <input type="submit" value="Add Foods" class="btn btn-success"/>   <label></label>
-                                <Link to ='foodList'><input type="button" value="Food List" class="btn btn-info"/>{' '}</Link>
+                                <Link to ='dinnerList'><input type="button" value="Food List" class="btn btn-info"/>{' '}</Link>
                                     </div>
 
                                     </form>
