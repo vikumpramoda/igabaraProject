@@ -8,17 +8,17 @@ class pie extends Component{
           super(props);
           this.state={
             chartDate:{
-              labels:['Brown','Pink','Green'],
+              labels:['Brown Igabara','Pink Igabara','Green Igabara'],
               datasets:[
                 {
                   label:'Igabara',
                   data:[
-                    1,6,1
+                    4,6,3
                   ],
                   backgroundColor:[
-                    'rgb(201, 203, 207)',
-                    'rgb(255, 205, 86)',
-                    'rgb(75, 192, 192)',
+                    '	rgb(139,69,19)',
+                    'rgb(255,20,147)',
+                    'rgb(34,139,34)',
                   ]
                 }
               ]
@@ -45,7 +45,8 @@ class pie extends Component{
           
             <div className="chart" >
 <Paper elevation={10} style={paperStyle}>
-  <div><ChartsNavbBar/></div>
+  <div><ChartsNavbBar/><h1>Analysis of demand for Hobbit Houses</h1></div>
+  
                 <Pie
 
 

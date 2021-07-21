@@ -15,7 +15,7 @@ export default class ChartsNavbBar extends Component {
     <Dropdown.Item href="/pie">1</Dropdown.Item>
     <Dropdown.Item href="/pie2">2</Dropdown.Item>
     <Dropdown.Item href="/breakfastChart">3</Dropdown.Item>
-    <Dropdown.Item href="/breakfastChart">4</Dropdown.Item>
+    <Dropdown.Item href="/lunchChart">4</Dropdown.Item>
     <Dropdown.Item href="/dinnerChart">5</Dropdown.Item>
   </Dropdown.Menu>
 </Dropdown>

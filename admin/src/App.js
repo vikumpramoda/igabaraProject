@@ -41,6 +41,7 @@ import Gmail from "./components/email/email";
 import AppointmentForm from "./components/calendar/ResrvationDate/AppointmentForm";
 import foodBreakfast from "./components/Charts/BreakfastAnalyseBarChart";
 import fooddinner from "./components/Charts/DinnerAnalyseBarChart";
+import foodlunch from "./components/Charts/LunchAnalyseBarChart";
 class App extends Component {
   render() {
     return (
@@ -82,6 +83,7 @@ class App extends Component {
                 <Route exact path="/pie2" component={Pie2} />
                 <Route exact path="/breakfastChart" component={foodBreakfast} />
                 <Route exact path="/dinnerChart" component={fooddinner} />
+                <Route exact path="/lunchChart" component={foodlunch} />
                 <Route exact path="/feedbackReport" component={FeedbackReport} />
                 <Route exact path="/Gmail" component={Gmail} />
                 
