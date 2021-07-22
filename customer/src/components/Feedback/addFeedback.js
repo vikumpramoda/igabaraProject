@@ -283,9 +283,11 @@ componentDidMount(){
                             }}
                             >
                             <option aria-label="None" value="" />
-                            <option value={"Hoppers"}>Hoppers</option>
-                            <option value={"StringHoppers"}>StringHoppers</option>
-                            <option value={"Noodles"}>Noodles</option>
+                            <option value={"String Hoppers"}>String Hoppers</option>
+                            <option value={"pancakes"}>pancakes</option>
+                            <option value={"Pittu"}>Pittu</option>
+                            <option value={"Chickpea "}>Chickpea </option>
+                            <option value={"SANDWICH "}>SANDWICH </option>
                             </Select>
                         </FormControl>
 
@@ -322,12 +324,13 @@ componentDidMount(){
                     }}
                     >
                     <option aria-label="None" value="" />
-                    <option value={"BBQ"}>BBQ</option>
-                    <option value={"Chicken Rice"}>Chicken Rice</option>
-                    <option value={"Kottu"}>Kottu</option>
+                    <option value={"rice"}>rice</option>
+                    <option value={"Buriyani"}>Noodles</option>
+                    <option value={"Noodles"}>Noodles</option>
                     <option value={"Rice & Curry"}>Rice & Curry</option>
-                    <option value={"Egg Rice"}>Egg Rice</option>
+                    <option value={"BBQ Plate"}>BBQ Plate</option>
                     <option value={"Veg Noodles"}>Veg Noodles</option>
+                    <option value={"Mix Rice"}>Mix- Rice</option>
                     </Select>
                     </FormControl>
 
@@ -345,7 +348,7 @@ componentDidMount(){
 
 <Col>                                                                                       
                     <FormControl>
-                    <InputLabel htmlFor="age-native-simple">Selected Lunch</InputLabel>
+                    <InputLabel htmlFor="age-native-simple"> Lunch</InputLabel>
                     <Select
                     native
                     value={this.state.lfood}
@@ -356,12 +359,11 @@ componentDidMount(){
                     }}
                     >
                     <option aria-label="None" value="" />
-                    <option value={"Rice & Curry"}>Rice & Curry</option>
-                    <option value={"Chicken Rice"}>Chicken Rice</option>
-                    <option value={"Pasta"}>Pasta</option>
+                    <option value={"Buriyani"}>	Buriyani</option>
+                    <option value={"pizza"}>pizza</option>
+                    
                     <option value={"Mix Rice"}>Mix Rice</option>
-                    <option value={"Egg Rice"}>Egg Rice</option>
-                    <option value={"Veg Noodles"}>Veg Noodles</option>
+                   
                     </Select>
                     </FormControl>
 
