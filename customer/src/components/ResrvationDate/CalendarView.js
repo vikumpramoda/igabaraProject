@@ -64,7 +64,7 @@ const CalendarView = () => {
       })
     } else {
       Swal.fire({
-        title: 'Do you want to Book a Day',
+        title: 'Do you want to book this date?',
         showCancelButton: true,
         confirmButtonText: `Book`,
       }).then((result) => {
