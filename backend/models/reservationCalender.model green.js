@@ -15,10 +15,11 @@ const reservationSchema = new Schema({
     type: String, 
     require: true 
   },
-  slot: { 
+  slots: { 
     type: mongoose.Schema.Types.ObjectId, 
-    ref: 'slot'
+    ref: 'greencalanderTable'
   }
+
 }, { versionKey: false })
 
 const greenreservationModel = mongoose.model('greenreservationCalander', reservationSchema);

@@ -11,7 +11,7 @@ const slotSchema = new Schema({
     type: String, 
     require: true 
   }, 
-
+ 
  
 }, { versionKey: false })
 

@@ -10,7 +10,7 @@ module.exports = {
   deleteReservation
 }
 
-function findAllReservations(req, res) {
+/*function findAllReservations(req, res) {
   pinkreservationModel.find((error, data) => {
     if (error) {
       res.status(500).json({ 
@@ -21,7 +21,23 @@ function findAllReservations(req, res) {
       res.status(200).json(data);   
     }
   })
+}*/
+
+function findAllReservations(req, res) {
+  pinkreservationModel.find({}).populate("slots")
+  .then(data => {
+    res.status(200).json(data);  
+  })
+  .catch(error => {
+    console.log("appoint err",error)
+      res.status(500).json({ 
+        message: 'error fetching Reservation',
+        error: error
+      });
+  })
 }
+
+
 
 function addReservation (req, res) {
   const input = req.body;

@@ -15,9 +15,9 @@ const reservationSchema = new Schema({
     type: String, 
     require: true 
   },
-  slot: { 
+  slots: { 
     type: mongoose.Schema.Types.ObjectId, 
-    ref: 'slot'
+    ref: 'pinkcalanderTable'
   }
 }, { versionKey: false })
 

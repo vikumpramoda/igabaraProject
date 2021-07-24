@@ -43,6 +43,7 @@ import fooddinner from "./components/Charts/DinnerAnalyseBarChart";
 import foodlunch from "./components/Charts/LunchAnalyseBarChart";
 import PackageBar from "./components/Charts/packageBarChart";
 import PackageLine from "./components/Charts/packageLineChart";
+import GreenGuestandDatesList from "./components/reservationDates-Guest/guestListView Green";
 class App extends Component {
   render() {
     return (
@@ -79,6 +80,7 @@ class App extends Component {
                 <Route path="/editpackage/:id" component={EditPackages}/>
                 <Route path="/update/:id" component={UpdateDetails}/>
                 <Route exact path="/guestanddatesList" component={GuestandDatesList} />
+                <Route exact path="/greenguestanddatesList" component={GreenGuestandDatesList} />
                 <Route exact path="/foreignguestanddatesList" component={ForeignGuestandDatesList} />
                 <Route exact path="/pie" component={pie} />
                 <Route exact path="/packageBar" component={PackageBar} />

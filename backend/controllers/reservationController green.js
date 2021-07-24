@@ -11,17 +11,19 @@ module.exports = {
 }
 
 function findAllReservations(req, res) {
-  greenreservationModel.find((error, data) => {
-    if (error) {
+  greenreservationModel.find({}).populate("slots")
+  .then(data => {
+    res.status(200).json(data);  
+  })
+  .catch(error => {
+    console.log("appoint err",error)
       res.status(500).json({ 
-        message: 'error fetching book',
+        message: 'error fetching Reservation',
         error: error
       });
-    } else {
-      res.status(200).json(data);   
-    }
   })
 }
+
 
 function addReservation (req, res) {
   const input = req.body;

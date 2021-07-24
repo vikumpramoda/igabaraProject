@@ -4,6 +4,7 @@ import axios from 'axios';
 import Pdf from "react-to-pdf";
 import Button from 'react-bootstrap/Button';
 import { Paper } from '@material-ui/core';
+import { Table } from 'react-bootstrap';
 import { Scrollbars } from 'rc-scrollbars';
 const ref = React.createRef();
 
@@ -21,7 +22,7 @@ const Exercise=props=>(
     </tr>
 )
 
-export default class GuestandDatesList extends Component {
+export default class GreenGuestandDatesList extends Component {
 
     constructor(props){
         super(props);
@@ -38,7 +39,7 @@ export default class GuestandDatesList extends Component {
     }*/
 
     componentDidMount(){
-        axios.get('http://localhost:5000/pinkreservations/')
+        axios.get('http://localhost:5000/greenreservations/')
         .then(response=>{
             this.setState({exercises:response.data})
         })    
@@ -46,7 +47,7 @@ export default class GuestandDatesList extends Component {
 
 
     deleteExercise(id){
-        axios.delete('http://localhost:5000/pinkslots/'+id)
+        axios.delete('http://localhost:5000/greenslot/'+id)
         .then(res=>console.log(res.data));
 
         this.setState({
@@ -65,7 +66,7 @@ export default class GuestandDatesList extends Component {
         return (
             <div className="Post" ref={ref}>
                 <Paper elevation={10} style={paperStyle}>
-                <h3>Pink igarara Booking Report</h3>
+                <h3>Green igarara Booking Report</h3>
                 <Scrollbars style={{ width: 1300, height: '70vh' }}>
                 <table className="table">
                     <thead className="thead-light">
@@ -84,7 +85,6 @@ export default class GuestandDatesList extends Component {
                 <Pdf targetRef={ref} filename="Guest Deatails List.pdf">
         {({ toPdf }) => <Button variant="success" onClick={toPdf}>Download as PDF</Button>}
       </Pdf>
-      <Link to ='greenguestanddatesList'><Button variant="warning" size=" " style={{position:'absolute',right: 5 }} >G Report</Button>{' '}</Link>
       </Scrollbars>
                 </Paper>
             </div>
