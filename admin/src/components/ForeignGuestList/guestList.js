@@ -100,12 +100,12 @@ export default class ForeignGuestList extends Component {
                         <th>Update</th>
                         <th>First Name</th>
                         <th>Last Name</th>
-                        <th>ID No</th>
+                        <th>Quarantine Report</th>
                         <th>DOB</th>
                         <th>Gender</th>
                         <th> 2 First Name</th>
                         <th>2 Last Name</th>
-                        <th>2 ID No</th>
+                        <th>2 Quarantine Report</th>
                         <th>2 DOB</th>
                         <th>2 Gender</th>
                         <th>adults count</th>
