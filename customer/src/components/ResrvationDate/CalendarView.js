@@ -61,6 +61,7 @@ const CalendarView = () => {
         icon: 'info',
         title: 'Oops...',
         text: 'Date is unavailable',
+        footer:`<a class="btn btn-warning" href="/calendar2">Move to Pink Igabara Hobbit House</a>`
       })
     } else {
       Swal.fire({
