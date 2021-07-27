@@ -287,7 +287,7 @@ componentDidMount(){
                             <option value={"pancakes"}>pancakes</option>
                             <option value={"Pittu"}>Pittu</option>
                             <option value={"Chickpea "}>Chickpea </option>
-                            <option value={"SANDWICH "}>SANDWICH </option>
+                            
                             </Select>
                         </FormControl>
 
@@ -331,6 +331,7 @@ componentDidMount(){
                     <option value={"BBQ Plate"}>BBQ Plate</option>
                     <option value={"Veg Noodles"}>Veg Noodles</option>
                     <option value={"Mix Rice"}>Mix- Rice</option>
+                    <option value={"SANDWICH "}>Sandwich</option>
                     </Select>
                     </FormControl>
 
